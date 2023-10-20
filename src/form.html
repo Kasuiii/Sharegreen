@@ -73,33 +73,97 @@
         </div>
       </nav>
     </section>
-    <div class="container mx-auto p-5 font-kanit">
-      <section>
-        <form
-          method="post"
-          class="p-5 bg-green-400 w-3/6 mx-auto"
-          name="register-form"
-        >
-          <p class="mb-4 text-2xl">ข้อมูลผู้เข้าร่วมการแข่งขัน</p>
+    <div class="container flex flex-row mx-auto p-5 font-kanit">
+      <form
+        method="post"
+        class="p-5 bg-green-400 w-3/6 mx-auto"
+        name="register-form"
+      >
+        <p class="mb-4 text-2xl">ข้อมูลผู้เข้าร่วมการแข่งขัน</p>
+        <div>
+          <p class="mb-4 text-x">ชื่อ</p>
           <input
             type="text"
             name="name"
             placeholder="ex. นายรัชพล"
             class="form-input"
-          /><br />
+          />
+        </div>
+        <div>
+          <p class="mb-4 text-x">นามสกุล</p>
           <input
             type="text"
-            name="surename"
+            name="surname"
             placeholder="ex. ขาวเขียว"
             class="form-input"
-          /><br />
+          />
+        </div>
+        <div>
+          <p class="mb-4 text-x">email</p>
+          <input type="text" name="email" placeholder="" class="form-input" />
+        </div>
+        <div>
+          <p class="mb-4 text-x">ระดับชั้น</p>
+          <input
+            type="text"
+            name="M"
+            placeholder="ex. ขาวเขียว"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <p class="mb-4 text-x">โรงเรียน</p>
+          <input
+            type="text"
+            name="school"
+            placeholder="ex. ขาวเขียว"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <p class="mb-4 text-x">เบอร์โทรศัพท์</p>
+          <input
+            type="text"
+            name="surname"
+            placeholder="ex. ขาวเขียว"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <p class="mb-4 text-x">line id</p>
+          <input
+            type="text"
+            name="surname"
+            placeholder="ex. ขาวเขียว"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <p class="mb-4 text-x">รู้จักมาจากไหน</p>
+          <input
+            type="text"
+            name="surname"
+            placeholder="ex. ขาวเขียว"
+            class="form-input"
+          />
+        </div>
+        <div>
+          <p class="mb-4 text-x">อัพโหลดคลิป</p>
+          <input
+            type="text"
+            name="surname"
+            placeholder="ex. ขาวเขียว"
+            class="form-input"
+          />
+        </div>
+        <button class="btn">
           <input
             type="submit"
             value="ยืนยัน"
-            class="p-2 bg-green-700 text-white hover:bg-green-900"
+            class="p-2 bg-green-700 text-black hover:bg-green-900"
           />
-        </form>
-      </section>
+        </button>
+      </form>
     </div>
 
     <script src="link_sheet.js"></script>
