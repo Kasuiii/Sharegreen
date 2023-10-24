@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         kanit: ["kanit", "sans-serif"],
       },
+      maxWidth: {
+        30: "30%",
+      },
     },
   },
   plugins: [],
