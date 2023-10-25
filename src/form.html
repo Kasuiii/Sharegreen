@@ -11,134 +11,136 @@
     ></script>
   </head>
 
-  <body class="bg-lime-200 font-kanit">
-    <section class="bg-transparent">
-      <nav>
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-        >
-          <a href="#" class="flex items-center">
-            <img src="../img/logo.jpg" class="h-8 mr-3" alt="Flowbite Logo" />
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black"
-              >Sharegreen</span
-            >
-          </a>
-          <button
-            data-collapse-toggle="navbar-dropdown"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-dropdown"
-            aria-expanded="false"
+  <body class="font-kanit">
+    <div class="mt-10">
+      <header>
+        <div class="">
+          <h1
+            class="text-black text-2xl sm:text-6xl flex items-center justify-center text-center mb-5"
           >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:border-0"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-black"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-black"
-                  aria-current="page"
-                  >Sign in</a
-                >
-              </li>
-            </ul>
+            ขั้นตอนการสมัคร
+          </h1>
+          <div class="flex flex-col items-center justify-center">
+            <embed src="../file/v2.pdf" class="w-[50%] h-[50rem]" />
+            <h1 class="flex justify-start">
+              <a href="../file/v2.pdf">ดาวน์โหลดไฟล์ pdf</a>
+            </h1>
           </div>
         </div>
-      </nav>
-    </section>
-    <div class="container flex flex-row mx-auto p-5 font-kanit">
-      <form
-        method="post"
-        class="p-5 bg-green-400 w-3/6 mx-auto"
-        name="register-form"
-      >
-        <p class="mb-4 text-2xl">ข้อมูลผู้เข้าร่วมการแข่งขัน</p>
-        <div>
-          <p class="mb-4 text-x">ชื่อ</p>
-          <input
-            type="text"
-            name="name"
-            placeholder="ex. นายรัชพล"
-            class="form-input"
-          />
+      </header>
+      <main>
+        <div class="mx-2 px-2 pt-8 sm:mx-16 sm:px-16 sm:pt-12">
+          <h1 class="text-xl sm:text-3xl font-semibold">ข้อมูลผู้สมัคร</h1>
+          <div class="container flex flex-row">
+            <form method="post" class="sm:mx-auto" name="register-form">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="block">
+                  <span class="text-gray-700 text-x">คำนำหน้าชื่อ</span>
+                  <select
+                    class="form-select block w-6/12 mt-1 rounded-lg bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                  >
+                    <option value="Mr">นาย</option>
+                    <option value="Miss">นางสาว</option>
+                    <option value="Mrs">นาง</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="text-gray-700 text-x">ชื่อ</span>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-input mt-1 block w-full rounded-lg bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    placeholder="ex. นายรัชพล"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700 text-x">นามสกุล</span>
+                  <input
+                    type="text"
+                    name="surname"
+                    placeholder="ex. ขาวเขียว"
+                    class="form-input mt-1 block w-full rounded bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                  />
+                </label>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <label class="block">
+                  <span class="text-gray-700 text-x">ระดับชั้น</span>
+                  <select
+                    class="form-select block w-full mt-1 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                  >
+                    <option value="Mr">มัธยมศึกษาปีที่ 1</option>
+                    <option value="Miss">มัธยมศึกษาปีที่ 2</option>
+                    <option value="Mrs">มัธยมศึกษาปีที่ 3</option>
+                    <option value="Mr">มัธยมศึกษาปีที่ 4</option>
+                    <option value="Miss">มัธยมศึกษาปีที่ 5</option>
+                    <option value="Mrs">มัธยมศึกษาปีที่ 6</option>
+                  </select>
+                </label>
+                <label class="block col-span-2">
+                  <span class="text-gray-700 text-x">ชื่อโรงเรียน</span>
+                  <input
+                    type="text"
+                    name="school"
+                    class="form-input mt-1 block w-full bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+              <div class="grid grid-cols-1 gap-3">
+                <label class="block">
+                  <span class="text-gray-700 text-x">อีเมล</span>
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-input mt-1 block w-6/12 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    placeholder="xxxx@xxx.xxx"
+                  />
+                </label>
+              </div>
+              <div class="grid grid-cols-1 gap-3">
+                <label class="block">
+                  <span class="text-gray-700 text-x">เบอร์โทรศัพท์</span>
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-input mt-1 block w-6/12 bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    placeholder="xxx-xxxx-xxx"
+                  />
+                </label>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label class="block">
+                  <span class="text-gray-700">อัปโหลดแบบฟอร์มรับสมัคร</span>
+                  <input type="file" class="mt-1 block w-full" />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700"
+                    >อัปโหลดสำเนาบัตรประจำตัวนักเรียน</span
+                  >
+                  <input type="file" class="mt-1 block w-full" />
+                </label>
+              </div>
+              <div class="grid grid-cols-1">
+                <label class="block">
+                  <span class="text-gray-700"
+                    >อัปโหลดคลิปวิดีโอ(ขนาดน้อยกว่า 100 mb)</span
+                  >
+                  <input type="file" class="mt-1 block w-full" />
+                </label>
+              </div>
+
+              <button class="py-5 rounded">
+                <input
+                  type="submit"
+                  value="ยืนยัน"
+                  class="p-2 bg-green-700 text-white hover:bg-green-900"
+                />
+              </button>
+            </form>
+          </div>
         </div>
-        <div>
-          <p class="mb-4 text-x">นามสกุล</p>
-          <input
-            type="text"
-            name="surname"
-            placeholder="ex. ขาวเขียว"
-            class="form-input"
-          />
-        </div>
-        <div>
-          <p class="mb-4 text-x">email</p>
-          <input type="text" name="email" placeholder="" class="form-input" />
-        </div>
-        <div>
-          <p class="mb-4 text-x">ระดับชั้น</p>
-          <input type="text" name="M" placeholder="" class="form-input" />
-        </div>
-        <div>
-          <p class="mb-4 text-x">โรงเรียน</p>
-          <input type="text" name="school" placeholder="" class="form-input" />
-        </div>
-        <div>
-          <p class="mb-4 text-x">เบอร์โทรศัพท์</p>
-          <input
-            type="text"
-            name="Phone"
-            placeholder="xxx-xxxx-xxx"
-            class="form-input"
-          />
-        </div>
-        <div>
-          <p class="mb-4 text-x">line id</p>
-          <input type="text" name="Lineid" placeholder="" class="form-input" />
-        </div>
-        <div>
-          <p class="mb-4 text-x">รู้จักมาจากไหน</p>
-          <input type="text" name="From" placeholder="" class="form-input" />
-        </div>
-        <div>
-          <p class="mb-4 text-x">อัพโหลดคลิป</p>
-          <input type="text" name="Video" placeholder="" class="form-input" />
-        </div>
-        <button class="bg-black py-5 rounded">
-          <input
-            type="submit"
-            value="ยืนยัน"
-            class="p-2 bg-green-700 text-white hover:bg-green-900"
-          />
-        </button>
-      </form>
+      </main>
     </div>
 
     <script src="link_sheet.js"></script>
