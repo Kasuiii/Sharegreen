@@ -903,6 +903,54 @@ select{
   position: relative;
 }
 
+.top-2\/4{
+  top: 50%;
+}
+
+.top-3\/4{
+  top: 75%;
+}
+
+.left-2\/4{
+  left: 50%;
+}
+
+.right-2\/4{
+  right: 50%;
+}
+
+.left-3\/4{
+  left: 75%;
+}
+
+.left-1\/4{
+  left: 25%;
+}
+
+.right-1\/4{
+  right: 25%;
+}
+
+.left-\[50\%\]{
+  left: 50%;
+}
+
+.left-\[25\%\]{
+  left: 25%;
+}
+
+.left-\[30\%\]{
+  left: 30%;
+}
+
+.left-\[35\%\]{
+  left: 35%;
+}
+
+.left-\[40\%\]{
+  left: 40%;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1059,6 +1107,26 @@ select{
   max-width: 30%;
 }
 
+.translate-x-2\/4{
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-2\/4{
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-3\/4{
+  --tw-translate-x: 75%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-1\/4{
+  --tw-translate-x: 25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1113,6 +1181,10 @@ select{
 
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .border{
@@ -1192,6 +1264,14 @@ select{
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .px-2{
@@ -1421,6 +1501,42 @@ select{
 }
 
 @media (min-width: 640px){
+  .sm\:left-2\/4{
+    left: 50%;
+  }
+
+  .sm\:top-2\/4{
+    top: 50%;
+  }
+
+  .sm\:left-\[40\%\]{
+    left: 40%;
+  }
+
+  .sm\:top-3\/4{
+    top: 75%;
+  }
+
+  .sm\:left-\[35\%\]{
+    left: 35%;
+  }
+
+  .sm\:left-\[38\%\]{
+    left: 38%;
+  }
+
+  .sm\:left-\[39\%\]{
+    left: 39%;
+  }
+
+  .sm\:left-\[39\.5\%\]{
+    left: 39.5%;
+  }
+
+  .sm\:left-\[38\.5\%\]{
+    left: 38.5%;
+  }
+
   .sm\:mx-16{
     margin-left: 4rem;
     margin-right: 4rem;
@@ -1467,6 +1583,24 @@ select{
     width: 50%;
   }
 
+  .sm\:w-10{
+    width: 2.5rem;
+  }
+
+  .sm\:w-60{
+    width: 15rem;
+  }
+
+  .sm\:translate-x-2\/4{
+    --tw-translate-x: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:translate-y-2\/4{
+    --tw-translate-y: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1489,6 +1623,10 @@ select{
 
   .sm\:p-2{
     padding: 0.5rem;
+  }
+
+  .sm\:p-4{
+    padding: 1rem;
   }
 
   .sm\:px-16{
@@ -1575,6 +1713,15 @@ select{
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:font-semibold{
+    font-weight: 600;
   }
 }
 
