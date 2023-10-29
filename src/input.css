@@ -4,8 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
+input[type="checkbox"] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+.checkbox-format > label {
+    display: block;
+}
+
 @layer components {
-  .form-input {
-    @apply p-3 mb-3 w-full;
-  }
+    .form-section {
+        @apply bg-gray-100 my-10 rounded-xl;
+    }
+
+    .checkbox-style {
+        @apply border-2 border-blue-500 rounded-sm bg-white mr-2 cursor-pointer;
+    }
+
+    .btn {
+        @apply border-1 text-2xl rounded-lg border-black px-5 py-5 hover:opacity-70;
+    }
+
+    .selecter {
+        @apply rounded-lg mt-2 cursor-pointer;
+    }
 }
