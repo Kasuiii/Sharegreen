@@ -1,128 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/2a167d09ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/dist/output.css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/2a167d09ca.js" crossorigin="anonymous"></script>
-</head>
-
-<body class="font-kanit bg-white">
-  <nav class="bg-[#13A65F]">
-    <div class="flex flex-warp justify-between">
-      <div class="">
-        <img class="max-w-30 m-2 pb-2 pl-3" src="../img/navlogo2.png" />
+  <body class="bg-white font-kanit">
+    <nav class="bg-[#13A65F]">
+      <div class="flex-warp flex justify-between">
+        <div class="">
+          <img class="m-2 max-w-30 pb-2 pl-3" src="../img/navlogo2.png" />
+        </div>
+        <div class="hidden w-full pr-5 md:block md:w-auto" id="navbar-default">
+          <ul
+            class="mt-4 flex flex-col rounded-lg border p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0"
+          >
+            <li>
+              <a
+                href="#s1"
+                class="md:p- block rounded pt-7 text-white md:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#s2"
+                class="roundedmd:hover:bg-transparent block pt-7 text-white md:border-0"
+                >about us</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="hidden w-full md:block md:w-auto pr-5" id="navbar-default">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
-          <li>
-            <a href="#s1" class="block pt-7 text-white rounded md:bg-transparent md:p-" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#s2" class="block pt-7 text-white roundedmd:hover:bg-transparent md:border-0">about us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section>
-    <div class="relative">
-      <button
-        class="absolute flex items-center justify-center rounded-full p-1 sm:p-4 top-3/4 left-[40%] sm:top-3/4 sm:left-[38.5%] sm:translate-x-2/4 sm:translate-y-2/4 text-base sm:text-3xl sm:w-60 bg-[#FFE500] text-black hover:bg-[#e8d52c]">
-        <a href="../src/form.html">สมัครตอนนี้</a>
-      </button>
-      <!-- <button
+    </nav>
+    <section>
+      <div class="relative">
+        <button
+          class="absolute left-[40%] top-3/4 flex items-center justify-center rounded-full bg-[#FFE500] p-1 text-base text-black hover:bg-[#e8d52c] sm:left-[38.5%] sm:top-3/4 sm:w-60 sm:translate-x-2/4 sm:translate-y-2/4 sm:p-4 sm:text-3xl"
+        >
+          <a href="../src/form.html">สมัครตอนนี้</a>
+        </button>
+        <!-- <button
         class="absolute flex items-center justify-center rounded-full p-1 sm:p-4 top-3/4 left-[40%] sm:top-3/4 sm:left-[38.5%] sm:translate-x-2/4 sm:translate-y-2/4 text-base sm:text-3xl sm:w-60 bg-[#FFE500] text-black hover:bg-[#e8d52c]">
         <a href="../src/form.html">สมัครตอนนี้</a>
       </button> -->
-      <img class="w-full" src="../img/Website banner 2160x900.png" alt="banner" />
-    </div>
-  </section>
-  <main class="mx-8 px-8 pt-8 sm:mx-16 sm:px-16 sm:pt-12">
-    <div>
-      <section class="" id="s1">
-        <div class="text-4xl sm:text-6xl font-bold text-center flex items-center justify-center">
-          <h1>เกณฑ์การประกวด</h1>
-        </div>
-        <div class="">
-          <div class="text-xl my-3 py-3">
-            <div class="">
-              <h1 class="text-xl sm:text-3xl sm:font-semibold">
-                คุณสมบัติผู้เข้าแข่งขัน
-              </h1>
-              <div class="ml-1 pl-2 sm:ml-7 sm:pl-7 text-base sm:text-2xl">
-                🇴 นักเรียนระดับชั้นมัธยมศึกษา (ม.1-6)
+        <img
+          class="w-full"
+          src="../img/Website banner 2160x900.png"
+          alt="banner"
+        />
+      </div>
+    </section>
+    <main class="mx-8 px-8 pt-8 sm:mx-16 sm:px-16 sm:pt-12">
+      <div>
+        <section class="" id="s1">
+          <div
+            class="flex items-center justify-center text-center text-4xl font-bold sm:text-6xl"
+          >
+            <h1>เกณฑ์การประกวด</h1>
+          </div>
+          <div class="">
+            <div class="my-3 py-3 text-xl">
+              <div class="">
+                <h1 class="text-xl sm:text-3xl sm:font-semibold">
+                  คุณสมบัติผู้เข้าแข่งขัน
+                </h1>
+                <div class="ml-1 pl-2 text-base sm:ml-7 sm:pl-7 sm:text-2xl">
+                  🇴 นักเรียนระดับชั้นมัธยมศึกษา (ม.1-6)
+                </div>
+              </div>
+            </div>
+            <div class="my-3 py-3 text-xl">
+              <div class="">
+                <h1 class="text-xl sm:text-3xl sm:font-semibold">
+                  จำนวนผู้เข้าแข่งขัน
+                </h1>
+                <div class="ml-1 pl-2 text-base sm:ml-7 sm:pl-7 sm:text-2xl">
+                  🇴 ประเภทเดี่ยว
+                </div>
+              </div>
+            </div>
+            <div class="my-3 py-3 text-xl">
+              <div class="">
+                <h1 class="text-xl sm:text-3xl sm:font-semibold">
+                  รายละเอียดและกติกาการแข่งขัน
+                </h1>
+                <div class="ml-1 pl-2 text-base sm:ml-7 sm:pl-7 sm:text-2xl">
+                  🇴 การประกวดพูดสุนทรพจน์ หัวข้อ “ร่วมใจ รวมพลัง
+                  ร่วมหยุดยั้งภาวะโลกเดือด”
+                </div>
+                <div class="ml-1 pl-2 text-base sm:ml-7 sm:pl-7 sm:text-2xl">
+                  🇴 กรอกข้อมูลการสมัคร พร้อมแนบคลิปวิดีโอการพูดสุนทรพจน์
+                  ความยาวไม่เกิน 4 นาที (ถ่ายคลิปวิดีโอเป็นแนวนอน ใส่ชุดสุภาพ
+                  และห้ามมีการตัดต่อ) เพื่อพูดแนะนำตนเอง
+                  ผลกระทบและแนวทางการเตรียมความพร้อมเพื่อรับมือกับภาวะโลกเดือด
+                </div>
               </div>
             </div>
           </div>
-          <div class="text-xl my-3 py-3">
-            <div class="">
-              <h1 class="text-xl sm:text-3xl sm:font-semibold">
-                จำนวนผู้เข้าแข่งขัน
+          <div
+            class="mt-3 flex items-center justify-center pt-3 text-center text-3xl font-semibold text-[#FFCF00] sm:text-4xl"
+          >
+            <h1>เงินรางวัลมูลค่ารวม 2,500 บาท</h1>
+          </div>
+        </section>
+        <section class="my-10 py-10" id="s2">
+          <div
+            class="flex items-center justify-center text-center text-4xl font-semibold sm:text-6xl"
+          >
+            <h1>วัตถุประสงค์ของกิจกรรม</h1>
+          </div>
+          <div class="my-3 py-3 text-base sm:text-2xl">
+            เพื่อส่งเสริมและรณรงค์ให้เยาวชนได้ตระหนักและรับรู้ถึงภยันตรายของภาวะโลกเดือด
+            (Global Boiling)
+            ที่ส่งผลให้มนุษย์และสิ่งมีชีวิตทุกชนิดทั่วโลกต้องเผชิญกับสภาพอากาศลมฟ้าแบบสุดขั้ว
+            เกิดเป็นปฏิกิริยาลูกโซ่ที่กระทบในวงกว้าง ทั้งสิ่งแวดล้อม
+            สภาพภูมิอากาศ วิกฤติน้ำแล้ง ความมั่นคงทางอาหาร และปัญหาสุขภาพ
+            พร้อมทั้งปลูกฝังให้เยาวชนมีจิตสำนึกในการดูแลและรักษาทรัพยากรและสิ่งแวดล้อม
+            โดยเริ่มต้นจากการปรับเปลี่ยนพฤติกรรมในชีวิตประจำวันของแต่ละคนเพียงเล็กน้อย
+            เราก็สามารถทำให้โลกของเราน่าอยู่มากยิ่งขึ้นได้
+          </div>
+        </section>
+        <section class="my-10 py-10" id="s3">
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="w-12/12 h-6/12 sm:h-3/12 sm:w-3/12"
+              src="../img/logov2.png"
+              alt="logo"
+            />
+            <div class="mt-5 flex flex-col items-center justify-center">
+              <h1 class="text-center text-4xl font-semibold sm:text-6xl">
+                Sharegreen Thailand
               </h1>
-              <div class="ml-1 pl-2 sm:ml-7 sm:pl-7 text-base sm:text-2xl">
-                🇴 ประเภทเดี่ยว
-              </div>
+              <h1 class="my-3 py-3 text-base sm:text-2xl">
+                Sharegreen.th
+                เป็นการรวมกลุ่มของผู้คนที่มีความสนใจด้านสิ่งแวดล้อม
+                โดยเพจของพวกเรามีวัตถุประสงค์เพื่อรณรงค์ ปลูกฝัง
+                และสร้างความตระหนักรับรู้เกี่ยวกับสิ่งแวดล้อมโดยเน้นไปที่กลุ่มเยาวชน
+                โดยให้ความรู้ และจัดกิจกรรมในรูปแบบต่าง ๆ
+              </h1>
             </div>
           </div>
-          <div class="text-xl my-3 py-3">
-            <div class="">
-              <h1 class="text-xl sm:text-3xl sm:font-semibold">
-                รายละเอียดและกติกาการแข่งขัน
-              </h1>
-              <div class="ml-1 pl-2 sm:ml-7 sm:pl-7 text-base sm:text-2xl">
-                🇴 การประกวดพูดสุนทรพจน์ หัวข้อ “ร่วมใจ รวมพลัง
-                ร่วมหยุดยั้งภาวะโลกเดือด”
-              </div>
-              <div class="ml-1 pl-2 sm:ml-7 sm:pl-7 text-base sm:text-2xl">
-                🇴 กรอกข้อมูลการสมัคร พร้อมแนบคลิปวิดีโอการพูดสุนทรพจน์
-                ความยาวไม่เกิน 4 นาที (ถ่ายคลิปวิดีโอเป็นแนวนอน ใส่ชุดสุภาพ
-                และห้ามมีการตัดต่อ) เพื่อพูดแนะนำตนเอง
-                ผลกระทบและแนวทางการเตรียมความพร้อมเพื่อรับมือกับภาวะโลกเดือด
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="text-3xl sm:text-4xl font-semibold text-[#FFCF00] mt-3 pt-3 flex items-center justify-center text-center">
-          <h1>เงินรางวัลมูลค่ารวม 2,500 บาท</h1>
-        </div>
-      </section>
-      <section class="my-10 py-10" id="s2">
-        <div class="text-4xl sm:text-6xl font-semibold text-center flex items-center justify-center">
-          <h1>วัตถุประสงค์ของกิจกรรม</h1>
-        </div>
-        <div class="text-base sm:text-2xl my-3 py-3">
-          เพื่อส่งเสริมและรณรงค์ให้เยาวชนได้ตระหนักและรับรู้ถึงภยันตรายของภาวะโลกเดือด
-          (Global Boiling)
-          ที่ส่งผลให้มนุษย์และสิ่งมีชีวิตทุกชนิดทั่วโลกต้องเผชิญกับสภาพอากาศลมฟ้าแบบสุดขั้ว
-          เกิดเป็นปฏิกิริยาลูกโซ่ที่กระทบในวงกว้าง ทั้งสิ่งแวดล้อม
-          สภาพภูมิอากาศ วิกฤติน้ำแล้ง ความมั่นคงทางอาหาร และปัญหาสุขภาพ
-          พร้อมทั้งปลูกฝังให้เยาวชนมีจิตสำนึกในการดูแลและรักษาทรัพยากรและสิ่งแวดล้อม
-          โดยเริ่มต้นจากการปรับเปลี่ยนพฤติกรรมในชีวิตประจำวันของแต่ละคนเพียงเล็กน้อย
-          เราก็สามารถทำให้โลกของเราน่าอยู่มากยิ่งขึ้นได้
-        </div>
-      </section>
-      <section class="my-10 py-10" id="s3">
-        <div class="flex flex-col items-center justify-center">
-          <img class="w-12/12 h-6/12 sm:w-3/12 sm:h-3/12" src="../img/logov2.png" alt="logo" />
-          <div class="mt-5 flex flex-col items-center justify-center">
-            <h1 class="text-center text-4xl sm:text-6xl font-semibold">
-              Sharegreen Thailand
-            </h1>
-            <h1 class="text-base sm:text-2xl my-3 py-3">
-              Sharegreen.th
-              เป็นการรวมกลุ่มของผู้คนที่มีความสนใจด้านสิ่งแวดล้อม
-              โดยเพจของพวกเรามีวัตถุประสงค์เพื่อรณรงค์ ปลูกฝัง
-              และสร้างความตระหนักรับรู้เกี่ยวกับสิ่งแวดล้อมโดยเน้นไปที่กลุ่มเยาวชน
-              โดยให้ความรู้ และจัดกิจกรรมในรูปแบบต่าง ๆ
-            </h1>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-</body>
-
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

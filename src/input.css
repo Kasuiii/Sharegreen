@@ -5,23 +5,23 @@
 @tailwind utilities;
 
 @layer components {
-    .form-section {
-        @apply bg-gray-100 my-10 rounded-xl;
-    }
+  .form-section {
+    @apply my-10 rounded-xl bg-gray-100;
+  }
 
-    .checkbox-style {
-        @apply border-2 border-blue-500 rounded-sm bg-white mr-2 cursor-pointer;
-    }
+  .checkbox-style {
+    @apply mr-2 cursor-pointer rounded-sm border-2 border-blue-500 bg-white;
+  }
 
-    .btn {
-        @apply border-2 text-2xl rounded-lg border-black hover:opacity-70 px-4 py-2;
-    }
+  .btn {
+    @apply rounded-lg border-2 border-black px-4 py-2 text-2xl hover:opacity-70;
+  }
 
-    .selecter {
-        @apply rounded-lg mt-2 cursor-pointer;
-    }
+  .selecter {
+    @apply mt-2 cursor-pointer rounded-lg;
+  }
 
-    .text-input {
-        @apply w-full rounded-lg mt-2;
-    }
+  .text-input {
+    @apply mt-2 w-full rounded-lg;
+  }
 }
