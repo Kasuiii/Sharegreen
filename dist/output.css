@@ -765,10 +765,10 @@ select{
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -780,6 +780,12 @@ select{
 .selecter{
   margin-top: 0.5rem;
   cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.text-input{
+  margin-top: 0.5rem;
+  width: 100%;
   border-radius: 0.5rem;
 }
 
@@ -831,8 +837,16 @@ select{
   margin-bottom: 1rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .ml-1{
   margin-left: 0.25rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .ml-4{
@@ -883,6 +897,14 @@ select{
   flex-grow: 0;
 }
 
+.list-decimal{
+  list-style-type: decimal;
+}
+
+.list-disc{
+  list-style-type: disc;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -907,6 +929,10 @@ select{
   overflow: hidden;
 }
 
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
 .scroll-smooth{
   scroll-behavior: smooth;
 }
@@ -927,9 +953,18 @@ select{
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-\[\#6B7280\]{
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#13A65F\]{
@@ -958,6 +993,10 @@ select{
 
 .p-4{
   padding: 1rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .p-\[\.2rem\]{
@@ -994,6 +1033,10 @@ select{
 
 .pl-3{
   padding-left: 0.75rem;
+}
+
+.pl-8{
+  padding-left: 2rem;
 }
 
 .pr-5{
@@ -1045,6 +1088,11 @@ select{
   line-height: 1.5rem;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1081,16 +1129,6 @@ select{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-input[type="checkbox"] {
-  vertical-align: middle;
-  position: relative;
-  bottom: 1px;
-}
-
-.checkbox-format > label {
-  display: block;
 }
 
 .hover\:bg-\[\#e8d52c\]:hover{
@@ -1213,5 +1251,11 @@ input[type="checkbox"] {
 
   .md\:p-0{
     padding: 0px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:max-w-\[60vw\]{
+    max-width: 60vw;
   }
 }

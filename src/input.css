@@ -4,16 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-input[type="checkbox"] {
-    vertical-align: middle;
-    position: relative;
-    bottom: 1px;
-}
-
-.checkbox-format > label {
-    display: block;
-}
-
 @layer components {
     .form-section {
         @apply bg-gray-100 my-10 rounded-xl;
@@ -24,10 +14,14 @@ input[type="checkbox"] {
     }
 
     .btn {
-        @apply border-1 text-2xl rounded-lg border-black px-5 py-5 hover:opacity-70;
+        @apply border-2 text-2xl rounded-lg border-black hover:opacity-70 px-4 py-2;
     }
 
     .selecter {
         @apply rounded-lg mt-2 cursor-pointer;
+    }
+
+    .text-input {
+        @apply w-full rounded-lg mt-2;
     }
 }
