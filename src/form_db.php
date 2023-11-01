@@ -1,21 +1,27 @@
 <?php
+// set empty value
+$pronoun = $fname = $lname = $level = $school_name = $email = $tel = $news = $registerForm = $studentId = $video = '';
+
 // check if user press submit button
 if (isset($_POST["submit"])) {
-    // Connect to the database
-    require "server.php";
+    session_start();
 
     $pronoun = $_POST["pronoun"];
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
-    $name = $pronoun . $fname . " " . $lname;
+    $fullName = $pronoun . $fname . " " . $lname;
 
     $level = $_POST["level"];
     $school_name = $_POST["school_name"];
     $email = $_POST["email"];
     $tel = $_POST["tel"];
 
-    $news = $_POST["news"];
-    $newsWithComma = implode(",", $news);
+    $news = isset($_POST["news"]) ? $_POST["news"] : "-";
+    if ($news !== "-") {
+        $newsWithComma = implode(",", $news);
+    } else {
+        $newsWithComma = $news;
+    }
 
     // registerForm
     $registerForm = $_FILES["registerForm"];
@@ -35,7 +41,8 @@ if (isset($_POST["submit"])) {
             $registerFormUploadPath = "uploads/registerForm/" . $newRegisterFormName;
             move_uploaded_file($registerFormTmpName, $registerFormUploadPath);
         } else {
-            echo "อัปโหลดได้เฉพาะไฟล์ประเภท jpeg, jpg, png, pdf";
+            $_SESSION['error'] = "อัปโหลดได้เฉพาะไฟล์ประเภท jpeg, jpg, png, pdf";
+            header("location: form.php");
         }
     }
 
@@ -57,7 +64,7 @@ if (isset($_POST["submit"])) {
             $studentIdUploadPath = "uploads/studentId/" . $newStudentIdName;
             move_uploaded_file($studentIdTmpName, $studentIdUploadPath);
         } else {
-            echo "อัปโหลดได้เฉพาะไฟล์ประเภท jpeg, jpg, png, pdf";
+            $_SESSION['error'] = "อัปโหลดได้เฉพาะไฟล์ประเภท jpeg, jpg, png, pdf";
         }
     }
 
@@ -79,9 +86,13 @@ if (isset($_POST["submit"])) {
             $videoUploadPath = "uploads/video/" . $newVideoName;
             move_uploaded_file($videoTmpName, $videoUploadPath);
         } else {
-            echo "อัปโหลดได้เฉพาะไฟล์ประเภท mp4, webm, avi, flv";
+            $_SESSION['error'] = "อัปโหลดได้เฉพาะไฟล์ประเภท mp4, webm, avi, flv";
+            header("location: form.php");
         }
     }
+
+    // Connect to the database
+    require "server.php";
 
     // Check if got maximum user
     $sql = "SELECT * FROM registerdata";
@@ -92,19 +103,23 @@ if (isset($_POST["submit"])) {
         // Insert data
         $sql = "INSERT INTO registerdata VALUES (NULL,?,?,?,?,?,?,?,?,?)";
         $stmt = mysqli_prepare($conn, $sql);
-        mysqli_stmt_bind_param($stmt, 'sssssssss', $name, $level, $school_name, $email, $tel, $registerFormUploadPath, $studentIdUploadPath, $videoUploadPath, $newsWithComma);
+        mysqli_stmt_bind_param($stmt, 'sssssssss', $fullName, $level, $school_name, $email, $tel, $registerFormUploadPath, $studentIdUploadPath, $videoUploadPath, $newsWithComma);
         $result = mysqli_stmt_execute($stmt);
 
         if ($result) {
-            echo "add data successfully";
+            $_SESSION['success'] = 1;
+            header("location: form.php");
         } else {
-            echo "add data failure";
+            $_SESSION['error'] = "เกิดข้อผิดพลาด";
+            header("location: form.php");
         }
     } else {
-        echo "จำนวนคนสมัครเต็มแล้ว";
+        $_SESSION['error'] = "จำนวนคนสมัครเต็มแล้ว";
+        header("location: form.php");
     }
 } else {
-    echo "เกิดข้อผิดพลาด";
+    $_SESSION['error'] = "เกิดข้อผิดพลาด";
+    header("location: form.php");
 }
 
 // Disconnect from the database
