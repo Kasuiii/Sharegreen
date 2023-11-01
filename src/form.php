@@ -10,10 +10,10 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>แบบฟอร์มสมัคร</title>
   <link rel="stylesheet" href="../dist/output.css" />
-  <script defer src="https://cdn.tailwindcss.com"></script>
+  <script defer src="check_invalid.js"></script>
 </head>
 
-<body class="container mx-auto font-kanit">
+<body class="container mx-auto font-kanit box-border">
   <!-- register form -->
   <section class="mx-4">
     <h1 class="my-8 text-center text-4xl font-bold md:text-6xl">
@@ -90,21 +90,21 @@ session_start();
           </div>
           <div id="row4">
             <div class="grow flex-col">
-              <label>อัปโหลดแบบฟอร์มรับสมัคร<span class="text-red-500"> *</span><a href="#" class="pl-2 text-blue-700 hover:underline">ดาวน์โหลด</a></label><br />
+              <label>อัปโหลดแบบฟอร์มรับสมัคร<span class="text-red-500"> *jpeg, jpg, png, pdf</span><a href="#" class="pl-2 text-blue-700 hover:underline">ดาวน์โหลด</a></label><br />
               <input type="file" name="registerForm" id="register_form" class="mb-4 mt-2 w-full rounded-lg border border-[#6B7280] bg-white p-[.2rem]" data-label="แบบฟอร์มสมัคร" />
             </div>
           </div>
           <div id="row5">
             <div class="grow flex-col">
               <label>อัปโหลดสำเนาบัตรประจำตัวนักเรียน<span class="text-red-500">
-                  *</span><a href="#" class="pl-2 text-blue-700 hover:underline">ตัวอย่าง</a></label><br />
+                  *jpeg, jpg, png, pdf</span><a href="#" class="pl-2 text-blue-700 hover:underline">ตัวอย่าง</a></label><br />
               <input type="file" name="studentId" id="student_id" class="mb-4 mt-2 w-full rounded-lg border border-[#6B7280] bg-white p-[.2rem]" data-label="สำเนาบัตรประจำตัวนักเรียน" />
             </div>
           </div>
           <div id="row6">
             <div class="grow flex-col">
               <label>อัปโหลดคลิปวิดีโอ (ห้ามขนาดเกิน 100MB)<span class="text-red-500">
-                  *</span></label><br />
+                  *mp4, webm, avi, flv, wmv, mov, mkv</span></label><br />
               <input type="file" name="video" id="video" class="mb-4 mt-2 w-full rounded-lg border border-[#6B7280] bg-white p-[.2rem]" data-label="คลิปวิดีโอ" />
             </div>
           </div>
@@ -127,7 +127,7 @@ session_start();
       </section>
       <section class="mb-10 flex justify-center gap-x-4">
         <div>
-          <button type="submit" name="submit" class="btn hover:bg-[#FFA100]">ย้อนกลับ</button>
+          <a href="index.html" class="btn hover:bg-[#FFA100]">ย้อนกลับ</a>
           <button type="submit" name="submit" class="btn bg-[#FFE500]">ยืนยัน</button>
         </div>
       </section>

@@ -86,7 +86,7 @@ if (isset($_POST["submit"])) {
             $videoUploadPath = "uploads/video/" . $newVideoName;
             move_uploaded_file($videoTmpName, $videoUploadPath);
         } else {
-            $_SESSION['error'] = "อัปโหลดได้เฉพาะไฟล์ประเภท mp4, webm, avi, flv";
+            $_SESSION['error'] = "อัปโหลดได้เฉพาะไฟล์ประเภท mp4, webm, avi, flv, wmv, mov, mkv";
             header("location: form.php");
         }
     }

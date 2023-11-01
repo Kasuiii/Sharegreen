@@ -871,6 +871,10 @@ select{
   margin-top: 0.5rem;
 }
 
+.box-border{
+  box-sizing: border-box;
+}
+
 .flex{
   display: flex;
 }
