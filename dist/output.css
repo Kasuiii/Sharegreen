@@ -831,6 +831,10 @@ select{
   margin-bottom: 2.5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -841,6 +845,10 @@ select{
 
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .ml-4{
@@ -863,32 +871,12 @@ select{
   margin-top: 0.5rem;
 }
 
-.mr-16{
-  margin-right: 4rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .flex{
   display: flex;
 }
 
 .hidden{
   display: none;
-}
-
-.h-full{
-  height: 100%;
 }
 
 .w-full{
@@ -935,12 +923,12 @@ select{
   gap: 4rem;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
 .gap-32{
   gap: 8rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .gap-x-4{
@@ -1011,19 +999,14 @@ select{
   background-color: rgb(255 229 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400{
+.bg-gray-300{
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-green-300{
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-
-.bg-green-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .bg-green-500{
@@ -1036,19 +1019,9 @@ select{
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
-.bg-red-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70{
@@ -1059,8 +1032,16 @@ select{
   padding: 3rem;
 }
 
+.p-16{
+  padding: 4rem;
+}
+
 .p-4{
   padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .p-8{
@@ -1069,14 +1050,6 @@ select{
 
 .p-\[\.2rem\]{
   padding: .2rem;
-}
-
-.p-6{
-  padding: 1.5rem;
-}
-
-.p-16{
-  padding: 4rem;
 }
 
 .px-8{
@@ -1094,21 +1067,12 @@ select{
   padding-bottom: 1.25rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pl-2{
   padding-left: 0.5rem;
 }
 
 .pl-8{
   padding-left: 2rem;
-}
-
-.text-left{
-  text-align: left;
 }
 
 .text-center{
@@ -1146,10 +1110,6 @@ select{
 
 .font-bold{
   font-weight: 700;
-}
-
-.uppercase{
-  text-transform: uppercase;
 }
 
 .text-blue-700{
