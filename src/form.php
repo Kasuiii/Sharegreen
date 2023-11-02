@@ -11,6 +11,7 @@ session_start();
   <title>แบบฟอร์มสมัคร</title>
   <link rel="stylesheet" href="../dist/output.css" />
   <script defer src="check_invalid.js"></script>
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
 </head>
 
 <body class="container mx-auto font-kanit box-border">
