@@ -785,10 +785,6 @@ select{
   border-radius: 0.5rem;
 }
 
-.fixed{
-  position: fixed;
-}
-
 .relative{
   position: relative;
 }
@@ -845,10 +841,6 @@ select{
 
 .mb-12{
   margin-bottom: 3rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
 }
 
 .mb-4{
@@ -962,10 +954,6 @@ select{
 
 .overflow-y-auto{
   overflow-y: auto;
-}
-
-.scroll-smooth{
-  scroll-behavior: smooth;
 }
 
 .\!scroll-smooth{
@@ -1132,11 +1120,6 @@ select{
   line-height: 1.75rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -1196,20 +1179,12 @@ select{
 }
 
 @media (min-width: 768px){
-  .md\:fixed{
-    position: fixed;
-  }
-
   .md\:mb-0{
     margin-bottom: 0px;
   }
 
   .md\:ml-8{
     margin-left: 2rem;
-  }
-
-  .md\:block{
-    display: block;
   }
 
   .md\:w-\[40\%\]{
