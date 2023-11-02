@@ -789,8 +789,20 @@ select{
   position: fixed;
 }
 
+.relative{
+  position: relative;
+}
+
+.sticky{
+  position: sticky;
+}
+
 .top-0{
   top: 0px;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .mx-4{
@@ -808,9 +820,9 @@ select{
   margin-bottom: 2.5rem;
 }
 
-.my-24{
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .my-4{
@@ -851,20 +863,16 @@ select{
   margin-bottom: 2rem;
 }
 
+.ml-0{
+  margin-left: 0px;
+}
+
 .ml-4{
   margin-left: 1rem;
 }
 
 .ml-8{
   margin-left: 2rem;
-}
-
-.mr-8{
-  margin-right: 2rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
 }
 
 .mt-2{
@@ -883,12 +891,28 @@ select{
   display: none;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[70vw\]{
+  width: 70vw;
+}
+
 .w-full{
   width: 100%;
 }
 
 .max-w-\[800px\]{
   max-width: 800px;
+}
+
+.max-w-\[90vw\]{
+  max-width: 90vw;
 }
 
 .grow{
@@ -919,20 +943,12 @@ select{
   justify-content: center;
 }
 
-.justify-between{
-  justify-content: space-between;
-}
-
-.gap-16{
-  gap: 4rem;
-}
-
 .gap-32{
   gap: 8rem;
 }
 
-.gap-8{
-  gap: 2rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-x-4{
@@ -1032,12 +1048,13 @@ select{
   --tw-bg-opacity: 0.7;
 }
 
-.p-12{
-  padding: 3rem;
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.p-16{
-  padding: 4rem;
+.p-12{
+  padding: 3rem;
 }
 
 .p-4{
@@ -1083,6 +1100,10 @@ select{
   text-align: center;
 }
 
+.align-middle{
+  vertical-align: middle;
+}
+
 .font-kanit{
   font-family: kanit, sans-serif;
 }
@@ -1097,11 +1118,6 @@ select{
   line-height: 2.5rem;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1110,6 +1126,11 @@ select{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -1138,10 +1159,6 @@ select{
 
 .underline{
   text-decoration-line: underline;
-}
-
-.decoration-solid{
-  text-decoration-style: solid;
 }
 
 .hover\:bg-\[\#FFA100\]:hover{
@@ -1175,12 +1192,57 @@ select{
 }
 
 @media (min-width: 768px){
+  .md\:fixed{
+    position: fixed;
+  }
+
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
+  .md\:w-\[40\%\]{
+    width: 40%;
+  }
+
+  .md\:w-\[60\%\]{
+    width: 60%;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:p-16{
+    padding: 4rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
